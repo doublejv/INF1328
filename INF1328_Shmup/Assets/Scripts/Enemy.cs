@@ -11,6 +11,7 @@ public class Enemy : MonoBehaviour
     public bool canShoot;
     public float fireRate;
     public int health;
+    public int killValue;
 
     public GameObject projectile;
 
@@ -48,6 +49,7 @@ public class Enemy : MonoBehaviour
 
     private void Die()
     {
+        GameObject.Find("GameManager").GetComponent<GameManager>().IncreaseScore(killValue);
         Destroy(gameObject);
     }
 }

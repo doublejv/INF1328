@@ -150,6 +150,7 @@ MonoBehaviour:
   canShoot: 0
   fireRate: 0
   health: 1
+  killValue: 100
   projectile: {fileID: 0}
 --- !u!114 &8113244336241213953
 MonoBehaviour:
